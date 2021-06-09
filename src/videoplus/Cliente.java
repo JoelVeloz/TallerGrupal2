@@ -4,7 +4,9 @@
  * and open the template in the editor.
  */
 package videoplus;
-import java.util.ArrayList; 
+
+import java.util.ArrayList;
+
 /**
  *
  * @author raull
@@ -12,16 +14,27 @@ import java.util.ArrayList;
 public class Cliente {
     private ArrayList<Video> listaReproduccion;
     private String nombre;
-    
-    public Cliente(String nombre){
-    this.nombre= nombre;    
-    listaReproduccion = new ArrayList<>();
+
+    public Cliente(String nombre) {
+        this.nombre = nombre;
+        listaReproduccion = new ArrayList<>();
     }
-    public boolean agregarLista(Video v){
-        if (listaReproduccion.size()<5){
+
+    public boolean agregarLista(Video v) {
+        if (listaReproduccion.size() < 5) {
             listaReproduccion.add(v);
             return true;
-        }return false;
+        }
+        return false;
     }
-    
+
+    public void reproducir() {
+        String continuar = "no";
+
+        do {
+
+            
+        } while (continuar.equals("si"));
+    }
+
 }
