@@ -32,7 +32,10 @@ public class Cliente {
         String continuar = "no";
 
         do {
-
+           Video pV = listaReproduccion.get(0);
+           pV.mostrarInformacion();
+           pV.setNumeroReproducciones(pV.getNumeroReproducciones()+1);
+           listaReproduccion.remove(0);
             
         } while (continuar.equals("si"));
     }

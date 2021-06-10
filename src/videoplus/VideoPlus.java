@@ -12,8 +12,8 @@ import java.util.ArrayList;
  * @author rocio
  */
 public class VideoPlus {
-    
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
         ArrayList<Video> videos = new ArrayList<Video>();
         videos.add(new Video("Cruela"));
         videos.add(new Video("Lazo While"));
@@ -21,15 +21,18 @@ public class VideoPlus {
         videos.add(new Video("Chapie"));
         videos.add(new Video("Blanca Nieves"));
         videos.add(new Video("Buscando a neno"));
-        
+
         Cliente c = new Cliente("jose");
 
-        // c.agregarLista();
+        c.agregarLista(videos.get(0));
+        c.agregarLista(videos.get(1));
+        c.agregarLista(videos.get(2));
+        c.agregarLista(videos.get(3));
+        c.agregarLista(videos.get(4));
 
-        //agregue cinco peluclas a la lista de reproduccion
+        // agregue cinco peluclas a la lista de reproduccion
 
-
-    
-        //reproduzca las peliculas
+        c.reproducir();
+        // reproduzca las peliculas
     }
 }

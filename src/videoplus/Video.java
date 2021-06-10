@@ -36,6 +36,8 @@ public class Video {
             
         }return false;
     }
+
+    
     public String getNombre() {
         return this.nombre;
     }
